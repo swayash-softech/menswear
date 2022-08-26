@@ -1319,6 +1319,7 @@ iframe{
     color: #fff;
     text-align: right;
     line-height: 40px;
+    cursor: pointer;
 }
 
 .lightbox_caption{
@@ -1365,9 +1366,12 @@ iframe{
     right: 1.8rem;
 }
 
-.lightbox_controls .next_items .bx, .lightbox_controls .prev_items .bx{
+.lightbox_controls .next_items .bx, .lightbox_controls .prev_items .bxs{
     font-size: 2rem;
     line-height: 40px;
+}
+.verified_star{
+    color: var(--first-color)
 }
 
 
