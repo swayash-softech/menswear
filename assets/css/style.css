@@ -1278,6 +1278,91 @@ iframe{
 
 
 
+/*=============== CATEGORY PAGE  ===============*/
+.category_page_container{
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+}
+
+.category_page_content{
+    position: relative;
+    background-color: var(--container-color);
+    padding: 2rem 0;
+    border-radius: 1rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.category_page_img{
+    width: 150px;
+    margin-bottom: var(--mb-1);
+    transition: .3s;
+}
+
+.category_page_tag{
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    background-color: var(--first-color);
+    color: #fff;
+    font-size: var(--small-font-size);
+    padding: .25rem .5rem;
+    border-radius: .25rem;
+}
+
+.category_page_title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.category_page_subtitle{
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+.category_page_prices{
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+.category_page_price{
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+}
+
+.category_page_discounts{
+    color: var(--first-color);
+    font-size: var(--smaller-font-size);
+    text-decoration: line-through;
+    font-weight: var(--font-medium);
+}
+
+.category_page_button{
+    display: inline-flex;
+    padding: .5rem;
+    border-radius: .25rem .25rem .75rem .25rem;
+    position: absolute;
+    bottom: 0;
+    right: -3rem;
+}
+
+.category_page_icon{
+    font-size: 1.25rem;
+}
+
+.category_page_content:hover .category_page_img{
+    transform: translateY(-.5rem);
+}
+
+.category_page_content:hover .category_page_button{
+    right: 0;
+}
+
+
+
+
 /*=============== LIGHTBOX ===============*/
 .lightbox{
     position: fixed;
@@ -1532,6 +1617,10 @@ iframe{
         margin-bottom: var(--mb-0-5);
     }
 
+    .category_page_container{
+        grid-template-columns: repeat(3,1fr);
+    }
+
 }
 
 /* For medium devices */
@@ -1755,6 +1844,15 @@ iframe{
 
     .details_container{
         grid-template-columns: 1fr;
+    }
+
+    .category_page_container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+
+    .category_page_img{
+        width: 120px;
     }
 
 }
