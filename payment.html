@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/colors/color-1.css">
 
-    <title>checkout </title>
+    <title>Payment Page</title>
 </head>
 <body>
     <!--=============== HEADER ===============-->
@@ -140,6 +140,7 @@
         </div>
     </div> 
 
+
     <!--=============== LOGIN ===============-->
     <div class="login" id="login">
         <i class="bx bx-x login_close" id="login-close"></i>
@@ -164,35 +165,58 @@
             </div>
         </form>
     </div>
+ 
 
     <!--=============== MAIN ===============-->
     <main class="main">
-        <!--=============== REGISTRATION ===============-->
-        <section class="checkout section container1">
-            <h2 class="breadcrumb__title">Checkout Page</h2>
-            <h3 class="breadcrumb__subtitle">Home > <span> <span class="bold_name">Information</span> > Shipping > Payment</span></h3>
- 
+        <!--=============== CART ===============-->
+        <section class="payment_page section container">
+            <h2 class="breadcrumb__title">Payment Page</h2>
+            <h3 class="breadcrumb__subtitle">Home > <span>Information > Shipping > <span class="bold_name"> Payment</span></span></h3>
+
             <div class="checkout_container"> 
                 <div class="checkout_information">
-                    <h3 class="contact_information">Contact Information</h3>
-                    <input type="text" class="contact_email_input" placeholder="Email address">
-                    <h3 class="shipping_address">Shipping Address</h3>
-                    <input type="text" class="first_name_input" placeholder="First Name">
-                    <input type="text" class="last_name_input" placeholder="Last Name">
-                    <input type="text" class="address_input" placeholder="Address">
-                    <input type="text" class="city_input" placeholder="City">
-                    <input type="text" class="state_input" placeholder="State">
-                    <input type="text" class="pincode_input" placeholder="Pincode">
-                    <input type="text" class="contact_phone_input" placeholder="Phone Number">
-                        <input type="checkbox" value="order" class="order_update"/>
-                        <label class="order_update_text">Get your order on Whatsapp</label><br>
-                        <input type="checkbox" value="information" class="condition_apply"/>
-                        <label class="condition_apply_text">I have accepted all conditions</label><br>    
-                                <button class="button continue_shipping"><a href="shipping.html">Continue to shipping</a></button>
-                                <a href="cart.html" class="return_to_cart"><i class="bx bxs-chevron-left"></i>Return to cart</a>
+                    <div class="shipping_info">
+                        <div class="shipping_contact_info">
+                            <p class="contact_text">Contact</p>
+                            <p class="contact_number">+91 1234560</p>
+                            <a href="#" class="contact_change">Change</a>
+                        </div>
+                        <hr>
+                        <div class="shipping_ship_info">
+                            <p class="ship_text">Ship to</p>
+                            <p class="ship_info">Nashik, 423102 Tal.Deola Dis.Nashik</p>
+                            <a href="#" class="ship_info_change">Change</a>
+                        </div>
+                        <hr>
+                        <div class="shipping_ship_info">
+                            <p class="ship_text">Method</p>
+                            <p class="ship_info">Standard. Rs.100</p>
+                        </div>
+                    </div> 
+                    <h3 class="payment_text">Payment</h3>
+                    <p class="payment_info">All transactions are secure and encrypted.</p>
 
+                    <div class="payment_container">
+                        <div class="payment_type">
+                            <div class="payment_type_name">
+                                Razorpay Secure (UPI, Cards, Wallets, NetBanking)
+                            </div>
+                            <div class="payment_type_img">
+                                <img src="assets/img/payment.png" alt="" class="payment_img">
+                            </div>
+                        </div>
+                        <div class="payment_type_info">
+                            <i class='bx bxl-visa'></i>
+                            <p class="payment_type_info_text">
+                                After clicking “Complete order”, you will be redirected to Razorpay Secure (UPI, Cards, Wallets, NetBanking) to complete your purchase securely.
+                            </p>
+                        </div>
+                    </div>
+                    <button class="button continue_payment">Continue to payment</button>
+                    <a href="shipping.html" class="return_to_cart"><i class="bx bxs-chevron-left"></i>Return to Shipping</a>
                 </div>
-                
+
                 <div class="checkout_product">
                     <div class="product_content">
                         <div class="product_img">
@@ -220,6 +244,7 @@
                     </div>
                 </div>
             </div>
+            
         </section>
     </main>
 

@@ -865,7 +865,62 @@ input {
     color: var(--first-color);
     margin-top: .15rem;
 }
-/*=============== BLOG PAGE ===============*/
+
+
+/*=============== PAYMENT PAGE ===============*/
+.payment_text{
+    margin-top: 40px;
+}
+
+.payment_info{
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.payment_container{
+    width: 100%;    
+    border: .50px solid gray;
+    border-radius: .25rem;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.payment_type{
+    width: 100%;
+    border-bottom: 1px solid gray;
+    display: flex;
+}
+
+.payment_type_name{
+    width: 49%;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.payment_type_img{
+    width: 49%;
+    padding: 15px;
+    text-align: center;
+}
+
+.payment_type_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #fafafa;
+}
+
+.payment_type_info i{
+    font-size: 100px;
+}
+
+.payment_type_info_text{
+    font-size: 14px;
+    text-align: center;
+}
 
 
 /*=============== CART PAGE ===============*/
@@ -912,7 +967,7 @@ input {
 	bottom: 0px;
 	right: 0px;
 	padding: 7px 20px;
-	background-color: var(--first-color);
+	background-color: var(--first-color-add-cart);
 	color: white;
 	cursor: pointer;
 	border-radius: 5px;
@@ -1139,6 +1194,10 @@ input {
     margin-bottom: 40px;
 }
 
+.continue_shipping a{
+    color: #fff;
+}
+
 .product_content{
     display: flex;
     gap: 1rem;
@@ -1221,9 +1280,98 @@ input {
 
 
 
+/*=============== SHIPPING PAGE ===============*/
+.shipping_info{
+    width: 100%;    
+    border: .50px solid gray;
+    border-radius: .25rem;
+    padding: 10px;
+    font-size: 15px;
+}
 
+.shipping_contact_info{
+    display: flex;
+    padding: 10px;
+}
 
-/*=============== REGISTRATION PAGE ===============*/
+.contact_text{
+    width: 30%;
+}
+
+.contact_number{
+    width: 50%;
+    color: black;
+}
+
+.contact_change{
+    width: 20%;
+    text-align: end;
+    font-size: 13px;
+}
+.shipping_ship_info{
+    display: flex;
+    padding: 10px;
+}
+
+.ship_text{
+    width: 30%;
+}
+
+.ship_info{
+    width: 50%;
+    color: black;
+}
+
+.ship_info_change{
+    width: 20%;
+    text-align: end;
+    font-size: 13px;
+}
+.checkout_information hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.shipping_method_text{
+    margin-top: 50px;
+}
+
+.shipping_method_container{
+    width: 100%;    
+    border: .50px solid gray;
+    border-radius: .25rem;
+    padding: 20px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.standard_method{
+    width: 49%;
+    font-size: 17px;
+}
+
+.standard_method i{
+    font-size: 14px;
+    margin-right: 10px;
+    color: var(--first-color);
+}
+
+.method_price{
+    width: 49%;
+    text-align: end;
+}
+
+.continue_payment{
+    padding: 13px 15px;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.continue_payment a{
+    color: #fff;
+}
+
 
 
 /*=============== CONTACT PAGE ===============*/
@@ -2161,12 +2309,12 @@ iframe{
 	}
 	.box img {
 		height: 150px;
-		width: 200px;
+		width: 200px; 
 	}
 
     .checkout_container{
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 2rem;
     }
 
     .product_content{
@@ -2249,7 +2397,28 @@ iframe{
         width: 48%;
         margin-left: 10px;
     }
+    .checkout_information{
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
 
+    .checkout_product{
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .payment_type{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .payment_type_name{
+        width: 100%;
+    }
+
+    .payment_type_img{
+        width: 80%;
+    }
 
 
 
