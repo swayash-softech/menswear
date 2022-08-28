@@ -2379,6 +2379,14 @@ iframe{
         margin-left: 10px;
     }
 
+    .content h3{
+        font-size: 17px;
+    }
+
+    .btn-area{
+        padding: 5px 15px;
+    }
+
 
 }
 
