@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/colors/color-1.css">
 
-    <title>Cart Page</title>
+    <title>checkout </title>
 </head>
 <body>
     <!--=============== HEADER ===============-->
@@ -140,7 +140,6 @@
         </div>
     </div> 
 
-
     <!--=============== LOGIN ===============-->
     <div class="login" id="login">
         <i class="bx bx-x login_close" id="login-close"></i>
@@ -168,57 +167,59 @@
 
     <!--=============== MAIN ===============-->
     <main class="main">
-        <!--=============== CART ===============-->
-        <section class="cart_page section container">
-            <h2 class="breadcrumb__title">Your Cart</h2>
-            <h3 class="breadcrumb__subtitle">Home > <span>Cart</span></h3>
-            
+        <!--=============== REGISTRATION ===============-->
+        <section class="checkout section container1">
+            <h2 class="breadcrumb__title">Checkout Page</h2>
+            <h3 class="breadcrumb__subtitle">Home > <span> <span class="bold_name">Information</span> > Shipping > Payment</span></h3>
 
-            <div class="project">
-                <div class="shop">
-                    <div class="box">
-                        <img src="assets/img/cart-1.png">
-                        <div class="content">
-                            <h3>Women Lipsticks</h3>
-                             <h4>Price:  <span>Rs. 600</span></h4>
-                            <p class="unit">Quantity: <input type="number" name="" value="2"></p>
-                            <p class="btn-area"><i aria-hidden="true" class="bx bxs-trash"></i> <span class="btn2">Remove</span></p>
-                        </div>
-                    </div>  
-                    <div class="box">
-                        <img src="assets/img/cart-2.png">
-                        <div class="content">
-                            <h3>Man's Watches</h3>
-                            <h4>Price: <span>Rs. 200</span></h4>
-                            <p class="unit">Quantity: <input type="number" name="" value="1"></p>
-                            <p class="btn-area"><i aria-hidden="true" class="bx bxs-trash"></i> <span class="btn2">Remove</span></p>
-                       </div>  
-                    </div>
-                    <div class="box">
-                        <img src="assets/img/cart-3.png">
-                        <div class="content">
-                            <h3>Samsung Mobile</h3>
-                            <h4>Price:  <span>Rs. 1000</span></h4>
-                            <p class="unit">Quantity: <input type="number" value="0"></p>
-                            <p class="btn-area"><i aria-hidden="true" class="bx bxs-trash"></i> <span class="btn2">Remove</span></p>
-                        </div>
-                    </div>
+            <div class="checkout_container">
+                <div class="checkout_information">
+                    <h3 class="contact_information">Contact Information</h3>
+                    <input type="text" class="contact_email_input" placeholder="Email address">
+                    <h3 class="shipping_address">Shipping Address</h3>
+                    <input type="text" class="first_name_input" placeholder="First Name">
+                    <input type="text" class="last_name_input" placeholder="Last Name">
+                    <input type="text" class="address_input" placeholder="Address">
+                    <input type="text" class="city_input" placeholder="City">
+                    <input type="text" class="state_input" placeholder="State">
+                    <input type="text" class="pincode_input" placeholder="Pincode">
+                    <input type="text" class="contact_phone_input" placeholder="Phone Number">
+                        <input type="checkbox" value="order" class="order_update"/>
+                        <label class="order_update_text">Get your order on Whatsapp</label><br>
+                        <input type="checkbox" value="information" class="condition_apply"/>
+                        <label class="condition_apply_text">I have accepted all conditions</label><br>    
+                                <button class="button continue_shipping">Continue to shipping</button>
+                                <a href="#" class="return_to_cart"><i class="bx bxs-chevron-left"></i>Return to cart</a>
+
                 </div>
-                <div class="right-bar">
-                    <p><span>Subtotal</span> <span>Rs. 200</span></p>
-                    <hr>
-                    <p><span>Tax (5%)</span> <span>Rs. 400</span></p>
-                    <hr>
-                    <p><span>Shipping</span> <span>Rs. 1000</span></p>
-                    <hr>
-                    <p class="cart_page_total"><span>Total</span> <span>Rs. 1600</span></p><a href="checkout.html"><i class="fa fa-shopping-cart"></i>Checkout</a>
+                
+                <div class="checkout_product">
+                    <div class="product_content">
+                        <div class="product_img">
+                        <img src="assets/img/product-1.png" alt="" class="checkout_product_img">
+                        </div>
+                        <div class="product_info_content">
+                        <h3 class="product_info">Leather fur Jacket for Men</h3>
+                        <p class="checkout_product_size">M (38)</p>
+                        </div>
+                        <p class="product_price">Rs . 700</p>
+                    </div>
+                    <div class="underline"></div>
+                    <div class="subtotal">
+                        <h3 class="subtotal_title">Subtotal</h3>
+                        <p class="subtotal_price">Rs. 700</p>
+                    </div>
+                    <div class="shipping">
+                        <h3 class="shipping_title">Shipping</h3>
+                        <p class="shipping_price">Rs. 100</p>
+                    </div>
+                    <div class="underline"></div>
+                    <div class="total">
+                        <h3 class="total_title">Total</h3>
+                        <p class="total_price">Rs. 800</p>
+                    </div>
                 </div>
             </div>
-
-
-
-
-
         </section>
     </main>
 
@@ -274,7 +275,6 @@
     <a href="" class="scrollup" id="scroll-up">
         <i class="bx bx-up-arrow-alt scrollup_icon"></i>
     </a>
-
     
     <!--=============== SWIPER JS ===============-->
     <script src="assets/js/swiper-bundle.min.js"></script>
